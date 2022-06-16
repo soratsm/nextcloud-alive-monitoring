@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  NEXTCLOUD_URL: ${{secrets.NEXTCLOUD_URL}}
-  LINE_TOKENS: ${{secrets.LINE_TOKENS}}
+  HD_NEXTCLOUD_URL: ${{secrets.NEXTCLOUD_URL}}
+  HD_LINE_TOKENS: ${{secrets.LINE_TOKENS}}
 
 jobs:
   build:
@@ -19,6 +19,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-      - name: Debug
-         run:
-          echo "NEXTCLOUD_URL = ${{ secrets.NEXTCLOUD_URL }}"
