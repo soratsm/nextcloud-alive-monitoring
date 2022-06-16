@@ -20,4 +20,4 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
     run: |
-      echo "key = ${{ secrets.NEXTCLOUD_URL }}"
+      echo "NEXTCLOUD_URL = ${{ secrets.NEXTCLOUD_URL }}"
