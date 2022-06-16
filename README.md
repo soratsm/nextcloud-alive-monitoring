@@ -27,10 +27,13 @@
   3.1 HEROKU_API_KEY(項2)
   3.2 HEROKU_APP(デプロイ先のHEROKUアプリ名を指定します)
   3.3 HEROKU_EMAIL(Herokuアカウントのメールアドレス)
-  3.4 NEXTCLOUD_URL(前述の通り)
-  3.5 LINE_TOKENS(前述の通り)
+  3.4 HD_NEXTCLOUD_URL(設定する値は前述の通りだが、接頭語『HD_』をつける)
+  3.5 HD_LINE_TOKENS(同上)
 4. Herokuで新規アプリ作成
 5. githubのリポジトリと連携
+6. githubの『main』リポジトリにプルする
+
+※[HD_をつける理由](egtr6upw1dy3Jdym16a8hSOM9rL3mb651Uo4NCuIcNp)
 
 ## 通知対象者の追加
 
