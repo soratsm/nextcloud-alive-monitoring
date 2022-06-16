@@ -15,9 +15,22 @@
 
 ### 2. サーバーにデプロイ
 
-* 適当に。。。（Heroku等々）
+* 適当に。。。（Heroku等々。ざっくりとした流れは下記に）
 * 取得している情報に流出したからどうこうできるモノではないので、どこにホスティングしても大丈夫です。(上記で記述した2つの環境変数だけは注意が必要であるため、そこだけはgit管理せずに気をつけてください)
 * 今後の拡張性を考慮し『helmet』や『cors』の設定をmain.tsに施してますが、よりスリム化したければ消してください。(外部に露出するAPIを生やさなければ不要です。)
+
+#### Herokuデプロイのざっくりとした流れ
+
+1. Herokuにアカウント作成（要メールアドレス）
+2. HerokuのAccountSettingsのメニューから「API　Key」でAPI　Keyを生成
+3. github の project の setting > secrets から登録する
+  3.1 HEROKU_API_KEY(項2)
+  3.2 HEROKU_APP(デプロイ先のHEROKUアプリ名を指定します)
+  3.3 HEROKU_EMAIL(Herokuアカウントのメールアドレス)
+  3.4 NEXTCLOUD_URL(前述の通り)
+  3.5 LINE_TOKENS(前述の通り)
+4. Herokuで新規アプリ作成
+5. githubのリポジトリと連携
 
 ## 通知対象者の追加
 
