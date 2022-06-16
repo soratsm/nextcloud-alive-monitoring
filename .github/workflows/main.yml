@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  HD_NEXTCLOUD_URL: ${{secrets.NEXTCLOUD_URL}}
-  HD_LINE_TOKENS: ${{secrets.LINE_TOKENS}}
+  NEXTCLOUD_URL: ${{secrets.NEXTCLOUD_URL}}
+  LINE_TOKENS: ${{secrets.LINE_TOKENS}}
 
 jobs:
   build:
