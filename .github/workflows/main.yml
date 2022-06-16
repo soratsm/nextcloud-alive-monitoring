@@ -8,8 +8,6 @@ on:
 env:
   NEXTCLOUD_URL: ${{secrets.NEXTCLOUD_URL}}
   LINE_TOKENS: ${{secrets.LINE_TOKENS}}
-run: |
-  echo "key = ${{ secrets.NEXTCLOUD_URL }}"
 
 jobs:
   build:
