@@ -32,7 +32,7 @@
 4. Herokuで新規アプリ作成
 5. githubのリポジトリと連携
 6. githubの『main』リポジトリにプルする
-7. デプロイが完了あ
+7. デプロイが完了
 
 ※[HD_をつける理由](egtr6upw1dy3Jdym16a8hSOM9rL3mb651Uo4NCuIcNp)
 
