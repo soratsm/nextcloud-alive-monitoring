@@ -20,5 +20,5 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
       - name: Debug
-         run: |
+         run:
           echo "NEXTCLOUD_URL = ${{ secrets.NEXTCLOUD_URL }}"
