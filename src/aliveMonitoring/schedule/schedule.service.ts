@@ -14,7 +14,7 @@ export class ScheduleService {
   private readonly logger = new Logger(ScheduleService.name);
   constructor(private readonly fetchService: FetchService) {}
 
-  @Cron('0 * * * *')
+  @Cron('*/5 * * * *')
   async scheduleForFetchAndNotification() {
     this.logger.debug('Started "check alive"');
     await this.fetchService.fetchAndNotification();
